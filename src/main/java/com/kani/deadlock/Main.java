@@ -1,17 +1,16 @@
 package com.kani.deadlock;
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.Scanner;
 
-/**
- *
- */
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Press enter to continue...");
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+
         final int[] counter1 = {1};   //supposed to be written by t1, read by t2
         final int[] counter2 = {1};   //supposed to be written by t2, read by t1
-        final int[] counter3 = {1};   //supposed to be written by t2, read by t1
+        final int[] counter3 = {1};   //supposed to be written by t3, read by t1
 
         Thread t1 = new Thread(new Runnable() {
             public void run() {
