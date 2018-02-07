@@ -33,13 +33,13 @@ public class Code1 {
             case 3:
                 op("three");
                 break;
-            case 4:
+            case 4:             //try changing this to -1 
                 op("three");
                 break;
             case 5:
                 op("three");
                 break;
-            case 6:
+            case 6:             //try changing this -100
                 op("three");
                 break;
             default:

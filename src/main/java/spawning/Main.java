@@ -10,15 +10,15 @@ public class Main {
         System.out.println("Press enter to continue...");
         Scanner sc = new Scanner(System.in);
         sc.nextLine();
+        ExecutorService executor = Executors.newFixedThreadPool(25);
 
         Random rand = new Random(System.currentTimeMillis());
         for (int i = 0; i < 10000; i++) {
-            ExecutorService executor = Executors.newFixedThreadPool(25);
             Runnable r1 = new Task(randomMatrix(1024, 2048,rand),randomMatrix(1024, 2048,rand));
             executor.execute(r1);
-            executor.shutdown();
         }
 
+        executor.shutdown();
         System.out.println("Done with tasks!");
     }
 
