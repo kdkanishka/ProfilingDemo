@@ -1,0 +1,50 @@
+  void m1();
+    Code:
+       0: bipush        10
+       2: istore_1
+       3: iload_1
+       4: iconst_1
+       5: if_icmpne     17
+       8: aload_0
+       9: ldc           #2                  // String one
+      11: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      14: goto          94
+      17: iload_1
+      18: iconst_2
+      19: if_icmpne     31
+      22: aload_0
+      23: ldc           #4                  // String two
+      25: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      28: goto          94
+      31: iload_1
+      32: iconst_3
+      33: if_icmpne     45
+      36: aload_0
+      37: ldc           #5                  // String three
+      39: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      42: goto          94
+      45: iload_1
+      46: iconst_4
+      47: if_icmpne     59
+      50: aload_0
+      51: ldc           #6                  // String four
+      53: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      56: goto          94
+      59: iload_1
+      60: iconst_5
+      61: if_icmpne     73
+      64: aload_0
+      65: ldc           #7                  // String five
+      67: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      70: goto          94
+      73: iload_1
+      74: bipush        6
+      76: if_icmpne     88
+      79: aload_0
+      80: ldc           #8                  // String six
+      82: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      85: goto          94
+      88: aload_0
+      89: ldc           #9                  // String oops!
+      91: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      94: return

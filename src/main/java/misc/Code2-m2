@@ -1,0 +1,32 @@
+  void m2();
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: tableswitch   { // 1 to 4
+                     1: 32
+                     2: 41
+                     3: 50
+                     4: 59
+               default: 68
+          }
+      32: aload_0
+      33: ldc           #9                  // String Apple
+      35: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+      38: goto          74
+      41: aload_0
+      42: ldc           #11                 // String Orange
+      44: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+      47: goto          74
+      50: aload_0
+      51: ldc           #12                 // String Banana
+      53: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+      56: goto          74
+      59: aload_0
+      60: ldc           #13                 // String Grapes
+      62: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+      65: goto          74
+      68: aload_0
+      69: ldc           #14                 // String Unknown
+      71: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+      74: return

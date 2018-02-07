@@ -1,0 +1,72 @@
+  void m1();
+    Code:
+       0: ldc           #2                  // String
+       2: astore_1
+       3: aload_1
+       4: astore_2
+       5: iconst_m1
+       6: istore_3
+       7: aload_2
+       8: invokevirtual #3                  // Method java/lang/String.hashCode:()I
+      11: lookupswitch  { // 4
+                 65025: 52
+                 65909: 80
+                 70853: 94
+                 78532: 66
+               default: 105
+          }
+      52: aload_2
+      53: ldc           #4                  // String APP
+      55: invokevirtual #5                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      58: ifeq          105
+      61: iconst_0
+      62: istore_3
+      63: goto          105
+      66: aload_2
+      67: ldc           #6                  // String ORG
+      69: invokevirtual #5                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      72: ifeq          105
+      75: iconst_1
+      76: istore_3
+      77: goto          105
+      80: aload_2
+      81: ldc           #7                  // String BNA
+      83: invokevirtual #5                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      86: ifeq          105
+      89: iconst_2
+      90: istore_3
+      91: goto          105
+      94: aload_2
+      95: ldc           #8                  // String GRP
+      97: invokevirtual #5                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     100: ifeq          105
+     103: iconst_3
+     104: istore_3
+     105: iload_3
+     106: tableswitch   { // 0 to 3
+                     0: 136
+                     1: 145
+                     2: 154
+                     3: 163
+               default: 172
+          }
+     136: aload_0
+     137: ldc           #9                  // String Apple
+     139: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+     142: goto          178
+     145: aload_0
+     146: ldc           #11                 // String Orange
+     148: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+     151: goto          178
+     154: aload_0
+     155: ldc           #12                 // String Banana
+     157: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+     160: goto          178
+     163: aload_0
+     164: ldc           #13                 // String Grapes
+     166: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+     169: goto          178
+     172: aload_0
+     173: ldc           #14                 // String Unknown
+     175: invokespecial #10                 // Method op:(Ljava/lang/String;)V
+     178: return

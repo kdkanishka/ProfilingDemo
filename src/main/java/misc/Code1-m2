@@ -1,0 +1,42 @@
+  void m2();
+    Code:
+       0: bipush        10
+       2: istore_1
+       3: iload_1
+       4: tableswitch   { // 1 to 6
+                     1: 44
+                     2: 53
+                     3: 62
+                     4: 71
+                     5: 80
+                     6: 89
+               default: 98
+          }
+      44: aload_0
+      45: ldc           #2                  // String one
+      47: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      50: goto          104
+      53: aload_0
+      54: ldc           #4                  // String two
+      56: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      59: goto          104
+      62: aload_0
+      63: ldc           #5                  // String three
+      65: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      68: goto          104
+      71: aload_0
+      72: ldc           #5                  // String three
+      74: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      77: goto          104
+      80: aload_0
+      81: ldc           #5                  // String three
+      83: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      86: goto          104
+      89: aload_0
+      90: ldc           #5                  // String three
+      92: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+      95: goto          104
+      98: aload_0
+      99: ldc           #9                  // String oops!
+     101: invokespecial #3                  // Method op:(Ljava/lang/String;)V
+     104: return
